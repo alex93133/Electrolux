@@ -10,14 +10,18 @@
 		33FEDEBA258F552300679218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDEB9258F552300679218 /* AppDelegate.swift */; };
 		33FEDEC3258F552700679218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FEDEC2258F552700679218 /* Assets.xcassets */; };
 		33FEDEC6258F552700679218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FEDEC4258F552700679218 /* LaunchScreen.storyboard */; };
+		83D6C10A87221EBC595670B0 /* Pods_Electrolux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.debug.xcconfig"; sourceTree = "<group>"; };
 		33FEDEB6258F552300679218 /* Electrolux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Electrolux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FEDEB9258F552300679218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33FEDEC2258F552700679218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FEDEC5258F552700679218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33FEDEC7258F552700679218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F815BA24782C26D30AF77068 /* Pods-Electrolux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.release.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D6C10A87221EBC595670B0 /* Pods_Electrolux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +41,8 @@
 			children = (
 				33FEDF02258F5B4300679218 /* Electrolux */,
 				33FEDEB7258F552300679218 /* Products */,
+				C507924C450102B10B83CC93 /* Pods */,
+				4E663C86D12AF5B24770CD4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +113,24 @@
 			path = Electrolux;
 			sourceTree = "<group>";
 		};
+		4E663C86D12AF5B24770CD4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C507924C450102B10B83CC93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */,
+				F815BA24782C26D30AF77068 /* Pods-Electrolux.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33FEDEE0258F552700679218 /* Build configuration list for PBXNativeTarget "Electrolux" */;
 			buildPhases = (
+				AB9E1260CD2D0186F23848B5 /* [CP] Check Pods Manifest.lock */,
 				33FEDEB2258F552300679218 /* Sources */,
 				33FEDEB3258F552300679218 /* Frameworks */,
 				33FEDEB4258F552300679218 /* Resources */,
+				0CDC58FC6CFD365C36F38EF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CDC58FC6CFD365C36F38EF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux/Pods-Electrolux-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux/Pods-Electrolux-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Electrolux/Pods-Electrolux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9E1260CD2D0186F23848B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electrolux-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33FEDEB2258F552300679218 /* Sources */ = {
@@ -311,6 +380,7 @@
 		};
 		33FEDEE1258F552700679218 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +401,7 @@
 		};
 		33FEDEE2258F552700679218 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F815BA24782C26D30AF77068 /* Pods-Electrolux.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
