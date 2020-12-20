@@ -10,6 +10,24 @@
 		33FEDEC3258F552700679218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FEDEC2258F552700679218 /* Assets.xcassets */; };
 		33FEDEC6258F552700679218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FEDEC4258F552700679218 /* LaunchScreen.storyboard */; };
 		33FEDF0B258F612000679218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF0A258F612000679218 /* AppDelegate.swift */; };
+		33FEDF17258F67E600679218 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF16258F67E600679218 /* PresentationAssembly.swift */; };
+		33FEDF1B258F67FB00679218 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF1A258F67FB00679218 /* RootAssembly.swift */; };
+		33FEDF1F258F681100679218 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF1E258F681100679218 /* ServiceAssembly.swift */; };
+		33FEDF27258F689D00679218 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF26258F689D00679218 /* UserDataService.swift */; };
+		33FEDF2B258F68B600679218 /* FlickrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF2A258F68B600679218 /* FlickrService.swift */; };
+		33FEDF2F258F6AD800679218 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF2E258F6AD800679218 /* TabBarController.swift */; };
+		33FEDF46258F6F2100679218 /* ImageSearcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF45258F6F2100679218 /* ImageSearcherView.swift */; };
+		33FEDF4A258F6F2D00679218 /* ImageSearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF49258F6F2D00679218 /* ImageSearcherViewController.swift */; };
+		33FEDF4D258F6F6100679218 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF4C258F6F6100679218 /* ImageDetailsViewController.swift */; };
+		33FEDF50258F6F7800679218 /* ImageDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF4F258F6F7700679218 /* ImageDetailsView.swift */; };
+		33FEDF53258F6F9500679218 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF52258F6F9500679218 /* UserInfoView.swift */; };
+		33FEDF57258F6FAB00679218 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF56258F6FAB00679218 /* UserInfoViewController.swift */; };
+		33FEDF5D258F700A00679218 /* ImageSearcherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF5C258F700A00679218 /* ImageSearcherModel.swift */; };
+		33FEDF60258F706300679218 /* ImageDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF5F258F706300679218 /* ImageDetailsModel.swift */; };
+		33FEDF63258F709B00679218 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF62258F709B00679218 /* UserInfoModel.swift */; };
+		33FEDF66258F70FE00679218 /* ImageSearcherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */; };
+		33FEDF69258F713800679218 /* ImageDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF68258F713800679218 /* ImageDetailsViewModel.swift */; };
+		33FEDF6D258F716A00679218 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF6C258F716A00679218 /* UserInfoViewModel.swift */; };
 		83D6C10A87221EBC595670B0 /* Pods_Electrolux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +38,24 @@
 		33FEDEC5258F552700679218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33FEDEC7258F552700679218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33FEDF0A258F612000679218 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33FEDF16258F67E600679218 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
+		33FEDF1A258F67FB00679218 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		33FEDF1E258F681100679218 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		33FEDF26258F689D00679218 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		33FEDF2A258F68B600679218 /* FlickrService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrService.swift; sourceTree = "<group>"; };
+		33FEDF2E258F6AD800679218 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		33FEDF45258F6F2100679218 /* ImageSearcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherView.swift; sourceTree = "<group>"; };
+		33FEDF49258F6F2D00679218 /* ImageSearcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherViewController.swift; sourceTree = "<group>"; };
+		33FEDF4C258F6F6100679218 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
+		33FEDF4F258F6F7700679218 /* ImageDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsView.swift; sourceTree = "<group>"; };
+		33FEDF52258F6F9500679218 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		33FEDF56258F6FAB00679218 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		33FEDF5C258F700A00679218 /* ImageSearcherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherModel.swift; sourceTree = "<group>"; };
+		33FEDF5F258F706300679218 /* ImageDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsModel.swift; sourceTree = "<group>"; };
+		33FEDF62258F709B00679218 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherViewModel.swift; sourceTree = "<group>"; };
+		33FEDF68258F713800679218 /* ImageDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewModel.swift; sourceTree = "<group>"; };
+		33FEDF6C258F716A00679218 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F815BA24782C26D30AF77068 /* Pods-Electrolux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.release.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +101,7 @@
 		33FEDEF8258F5A4B00679218 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				33FEDF1A258F67FB00679218 /* RootAssembly.swift */,
 				33FEDF0A258F612000679218 /* AppDelegate.swift */,
 				33FEDEC7258F552700679218 /* Info.plist */,
 			);
@@ -82,6 +119,8 @@
 		33FEDEFC258F5AA600679218 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				33FEDF31258F6BEA00679218 /* Assembly */,
+				33FEDF15258F67CA00679218 /* Modules */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -89,6 +128,8 @@
 		33FEDEFD258F5AB100679218 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				33FEDF32258F6BF800679218 /* Assembly */,
+				33FEDF22258F681800679218 /* Services */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -111,6 +152,171 @@
 				33FEDEF8258F5A4B00679218 /* Supporting files */,
 			);
 			path = Electrolux;
+			sourceTree = "<group>";
+		};
+		33FEDF14258F67A100679218 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF2E258F6AD800679218 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		33FEDF15258F67CA00679218 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF14258F67A100679218 /* TabBar */,
+				33FEDF34258F6DC700679218 /* ImageSearcher */,
+				33FEDF35258F6DF200679218 /* ImageDetails */,
+				33FEDF36258F6E1100679218 /* UserInfo */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		33FEDF22258F681800679218 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF24258F687200679218 /* UserData */,
+				33FEDF23258F683A00679218 /* Flickr */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		33FEDF23258F683A00679218 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF2A258F68B600679218 /* FlickrService.swift */,
+			);
+			path = Flickr;
+			sourceTree = "<group>";
+		};
+		33FEDF24258F687200679218 /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF26258F689D00679218 /* UserDataService.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		33FEDF31258F6BEA00679218 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF16258F67E600679218 /* PresentationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		33FEDF32258F6BF800679218 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF1E258F681100679218 /* ServiceAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		33FEDF34258F6DC700679218 /* ImageSearcher */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF59258F6FE000679218 /* Model */,
+				33FEDF44258F6EF400679218 /* ViewModel */,
+				33FEDF43258F6EEF00679218 /* View */,
+			);
+			path = ImageSearcher;
+			sourceTree = "<group>";
+		};
+		33FEDF35258F6DF200679218 /* ImageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF5A258F6FE500679218 /* Model */,
+				33FEDF42258F6EE500679218 /* ViewModel */,
+				33FEDF41258F6EE100679218 /* View */,
+			);
+			path = ImageDetails;
+			sourceTree = "<group>";
+		};
+		33FEDF36258F6E1100679218 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF5B258F6FEA00679218 /* Model */,
+				33FEDF40258F6EDA00679218 /* ViewModel */,
+				33FEDF3F258F6ED500679218 /* View */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		33FEDF3F258F6ED500679218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF52258F6F9500679218 /* UserInfoView.swift */,
+				33FEDF56258F6FAB00679218 /* UserInfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33FEDF40258F6EDA00679218 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF6C258F716A00679218 /* UserInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33FEDF41258F6EE100679218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF4F258F6F7700679218 /* ImageDetailsView.swift */,
+				33FEDF4C258F6F6100679218 /* ImageDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33FEDF42258F6EE500679218 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF68258F713800679218 /* ImageDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33FEDF43258F6EEF00679218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF45258F6F2100679218 /* ImageSearcherView.swift */,
+				33FEDF49258F6F2D00679218 /* ImageSearcherViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33FEDF44258F6EF400679218 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33FEDF59258F6FE000679218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF5C258F700A00679218 /* ImageSearcherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33FEDF5A258F6FE500679218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF5F258F706300679218 /* ImageDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33FEDF5B258F6FEA00679218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33FEDF62258F709B00679218 /* UserInfoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4E663C86D12AF5B24770CD4A /* Frameworks */ = {
@@ -231,7 +437,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "#${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		AB9E1260CD2D0186F23848B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -262,7 +468,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FEDF69258F713800679218 /* ImageDetailsViewModel.swift in Sources */,
+				33FEDF5D258F700A00679218 /* ImageSearcherModel.swift in Sources */,
 				33FEDF0B258F612000679218 /* AppDelegate.swift in Sources */,
+				33FEDF27258F689D00679218 /* UserDataService.swift in Sources */,
+				33FEDF50258F6F7800679218 /* ImageDetailsView.swift in Sources */,
+				33FEDF53258F6F9500679218 /* UserInfoView.swift in Sources */,
+				33FEDF2B258F68B600679218 /* FlickrService.swift in Sources */,
+				33FEDF1F258F681100679218 /* ServiceAssembly.swift in Sources */,
+				33FEDF57258F6FAB00679218 /* UserInfoViewController.swift in Sources */,
+				33FEDF4D258F6F6100679218 /* ImageDetailsViewController.swift in Sources */,
+				33FEDF2F258F6AD800679218 /* TabBarController.swift in Sources */,
+				33FEDF63258F709B00679218 /* UserInfoModel.swift in Sources */,
+				33FEDF46258F6F2100679218 /* ImageSearcherView.swift in Sources */,
+				33FEDF1B258F67FB00679218 /* RootAssembly.swift in Sources */,
+				33FEDF6D258F716A00679218 /* UserInfoViewModel.swift in Sources */,
+				33FEDF17258F67E600679218 /* PresentationAssembly.swift in Sources */,
+				33FEDF60258F706300679218 /* ImageDetailsModel.swift in Sources */,
+				33FEDF66258F70FE00679218 /* ImageSearcherViewModel.swift in Sources */,
+				33FEDF4A258F6F2D00679218 /* ImageSearcherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +639,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -437,7 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.electrolux.Electrolux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
