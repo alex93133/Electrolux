@@ -1,0 +1,3 @@
+#include "Pods/Target Support Files/Pods-Electrolux/Pods-Electrolux.debug.xcconfig"
+
+API_KEY = 68bca1b1d020be082398732661d96d22

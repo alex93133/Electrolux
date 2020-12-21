@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F9977C258F935800C95889 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */; };
+		33F99780258F93FC00C95889 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9977F258F93FC00C95889 /* ConfigurableView.swift */; };
+		33F99784258F945E00C95889 /* ImageCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99783258F945E00C95889 /* ImageCollectionViewCellModel.swift */; };
+		33F99787258F962900C95889 /* ImageSearcherViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */; };
+		33F9978A258F966A00C95889 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99789258F966A00C95889 /* Identifiers.swift */; };
+		33F9978D258FADCF00C95889 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9978C258FADCF00C95889 /* URL.swift */; };
+		33F99790258FADEF00C95889 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9978F258FADEF00C95889 /* Dictionary.swift */; };
+		33F99793258FAE1600C95889 /* URLQueryParameterStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99792258FAE1600C95889 /* URLQueryParameterStringConvertible.swift */; };
+		33F99797258FB06600C95889 /* InfoPlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99796258FB06600C95889 /* InfoPlistParser.swift */; };
+		33F997A5258FBE8900C95889 /* ImageMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F997A4258FBE8900C95889 /* ImageMetaData.swift */; };
+		33F997AA258FC82600C95889 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F997A9258FC82600C95889 /* ImageSize.swift */; };
+		33F997AD25907E3200C95889 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F997AC25907E3200C95889 /* UIViewController.swift */; };
 		33FEDEC3258F552700679218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FEDEC2258F552700679218 /* Assets.xcassets */; };
 		33FEDEC6258F552700679218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FEDEC4258F552700679218 /* LaunchScreen.storyboard */; };
 		33FEDF0B258F612000679218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF0A258F612000679218 /* AppDelegate.swift */; };
@@ -28,11 +40,26 @@
 		33FEDF66258F70FE00679218 /* ImageSearcherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */; };
 		33FEDF69258F713800679218 /* ImageDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF68258F713800679218 /* ImageDetailsViewModel.swift */; };
 		33FEDF6D258F716A00679218 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF6C258F716A00679218 /* UserInfoViewModel.swift */; };
+		33FEDF70258F91EB00679218 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF6F258F91EB00679218 /* Colors.swift */; };
+		33FEDF73258F924800679218 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEDF72258F924800679218 /* UIView.swift */; };
 		83D6C10A87221EBC595670B0 /* Pods_Electrolux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.debug.xcconfig"; sourceTree = "<group>"; };
+		33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		33F9977F258F93FC00C95889 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		33F99783258F945E00C95889 /* ImageCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherViewControllerDelegates.swift; sourceTree = "<group>"; };
+		33F99789258F966A00C95889 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		33F9978C258FADCF00C95889 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		33F9978F258FADEF00C95889 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		33F99792258FAE1600C95889 /* URLQueryParameterStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryParameterStringConvertible.swift; sourceTree = "<group>"; };
+		33F99795258FAFC100C95889 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		33F99796258FB06600C95889 /* InfoPlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistParser.swift; sourceTree = "<group>"; };
+		33F997A4258FBE8900C95889 /* ImageMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetaData.swift; sourceTree = "<group>"; };
+		33F997A9258FC82600C95889 /* ImageSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
+		33F997AC25907E3200C95889 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		33FEDEB6258F552300679218 /* Electrolux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Electrolux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FEDEC2258F552700679218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FEDEC5258F552700679218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +83,8 @@
 		33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherViewModel.swift; sourceTree = "<group>"; };
 		33FEDF68258F713800679218 /* ImageDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewModel.swift; sourceTree = "<group>"; };
 		33FEDF6C258F716A00679218 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		33FEDF6F258F91EB00679218 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		33FEDF72258F924800679218 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		BE57C8ECFC9D460F4D35E0BC /* Pods_Electrolux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F815BA24782C26D30AF77068 /* Pods-Electrolux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.release.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,9 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33F9977E258F93DF00C95889 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				33F9977F258F93FC00C95889 /* ConfigurableView.swift */,
+				33F99792258FAE1600C95889 /* URLQueryParameterStringConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		33FEDEAD258F552200679218 = {
 			isa = PBXGroup;
 			children = (
+				33F99795258FAFC100C95889 /* Config.xcconfig */,
 				33FEDF02258F5B4300679218 /* Electrolux */,
 				33FEDEB7258F552300679218 /* Products */,
 				C507924C450102B10B83CC93 /* Pods */,
@@ -103,6 +142,7 @@
 			children = (
 				33FEDF1A258F67FB00679218 /* RootAssembly.swift */,
 				33FEDF0A258F612000679218 /* AppDelegate.swift */,
+				33F99796258FB06600C95889 /* InfoPlistParser.swift */,
 				33FEDEC7258F552700679218 /* Info.plist */,
 			);
 			path = "Supporting files";
@@ -112,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				33FEDEC2258F552700679218 /* Assets.xcassets */,
+				33FEDF6F258F91EB00679218 /* Colors.swift */,
+				33F99789258F966A00C95889 /* Identifiers.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,6 +179,10 @@
 		33FEDF01258F5AF100679218 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				33FEDF72258F924800679218 /* UIView.swift */,
+				33F9978C258FADCF00C95889 /* URL.swift */,
+				33F9978F258FADEF00C95889 /* Dictionary.swift */,
+				33F997AC25907E3200C95889 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +194,7 @@
 				33FEDEF7258F5A4000679218 /* Storyboards */,
 				33FEDEFC258F5AA600679218 /* PresentationLayer */,
 				33FEDEFD258F5AB100679218 /* ServiceLayer */,
+				33F9977E258F93DF00C95889 /* Protocols */,
 				33FEDF01258F5AF100679218 /* Extensions */,
 				33FEDEF8258F5A4B00679218 /* Supporting files */,
 			);
@@ -186,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				33FEDF2A258F68B600679218 /* FlickrService.swift */,
+				33F997A9258FC82600C95889 /* ImageSize.swift */,
 			);
 			path = Flickr;
 			sourceTree = "<group>";
@@ -282,7 +330,9 @@
 			isa = PBXGroup;
 			children = (
 				33FEDF45258F6F2100679218 /* ImageSearcherView.swift */,
+				33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */,
 				33FEDF49258F6F2D00679218 /* ImageSearcherViewController.swift */,
+				33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */,
+				33F99783258F945E00C95889 /* ImageCollectionViewCellModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -299,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				33FEDF5C258F700A00679218 /* ImageSearcherModel.swift */,
+				33F997A4258FBE8900C95889 /* ImageMetaData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,8 +395,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33FEDEE0258F552700679218 /* Build configuration list for PBXNativeTarget "Electrolux" */;
 			buildPhases = (
-				33FEDF07258F609C00679218 /* ShellScript */,
 				AB9E1260CD2D0186F23848B5 /* [CP] Check Pods Manifest.lock */,
+				33FEDF07258F609C00679218 /* ShellScript */,
 				33FEDEB2258F552300679218 /* Sources */,
 				33FEDEB3258F552300679218 /* Frameworks */,
 				33FEDEB4258F552300679218 /* Resources */,
@@ -468,25 +520,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F99784258F945E00C95889 /* ImageCollectionViewCellModel.swift in Sources */,
 				33FEDF69258F713800679218 /* ImageDetailsViewModel.swift in Sources */,
+				33FEDF70258F91EB00679218 /* Colors.swift in Sources */,
 				33FEDF5D258F700A00679218 /* ImageSearcherModel.swift in Sources */,
 				33FEDF0B258F612000679218 /* AppDelegate.swift in Sources */,
 				33FEDF27258F689D00679218 /* UserDataService.swift in Sources */,
 				33FEDF50258F6F7800679218 /* ImageDetailsView.swift in Sources */,
 				33FEDF53258F6F9500679218 /* UserInfoView.swift in Sources */,
+				33F997AA258FC82600C95889 /* ImageSize.swift in Sources */,
 				33FEDF2B258F68B600679218 /* FlickrService.swift in Sources */,
+				33F99797258FB06600C95889 /* InfoPlistParser.swift in Sources */,
+				33F99780258F93FC00C95889 /* ConfigurableView.swift in Sources */,
 				33FEDF1F258F681100679218 /* ServiceAssembly.swift in Sources */,
+				33F9978D258FADCF00C95889 /* URL.swift in Sources */,
+				33F997AD25907E3200C95889 /* UIViewController.swift in Sources */,
 				33FEDF57258F6FAB00679218 /* UserInfoViewController.swift in Sources */,
+				33FEDF73258F924800679218 /* UIView.swift in Sources */,
 				33FEDF4D258F6F6100679218 /* ImageDetailsViewController.swift in Sources */,
+				33F9977C258F935800C95889 /* ImageCollectionViewCell.swift in Sources */,
+				33F99787258F962900C95889 /* ImageSearcherViewControllerDelegates.swift in Sources */,
 				33FEDF2F258F6AD800679218 /* TabBarController.swift in Sources */,
 				33FEDF63258F709B00679218 /* UserInfoModel.swift in Sources */,
+				33F99793258FAE1600C95889 /* URLQueryParameterStringConvertible.swift in Sources */,
 				33FEDF46258F6F2100679218 /* ImageSearcherView.swift in Sources */,
 				33FEDF1B258F67FB00679218 /* RootAssembly.swift in Sources */,
 				33FEDF6D258F716A00679218 /* UserInfoViewModel.swift in Sources */,
 				33FEDF17258F67E600679218 /* PresentationAssembly.swift in Sources */,
+				33F9978A258F966A00C95889 /* Identifiers.swift in Sources */,
 				33FEDF60258F706300679218 /* ImageDetailsModel.swift in Sources */,
+				33F99790258FADEF00C95889 /* Dictionary.swift in Sources */,
 				33FEDF66258F70FE00679218 /* ImageSearcherViewModel.swift in Sources */,
 				33FEDF4A258F6F2D00679218 /* ImageSearcherViewController.swift in Sources */,
+				33F997A5258FBE8900C95889 /* ImageMetaData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,7 +688,7 @@
 		};
 		33FEDEE1258F552700679218 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */;
+			baseConfigurationReference = 33F99795258FAFC100C95889 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -645,7 +711,7 @@
 		};
 		33FEDEE2258F552700679218 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F815BA24782C26D30AF77068 /* Pods-Electrolux.release.xcconfig */;
+			baseConfigurationReference = 33F99795258FAFC100C95889 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

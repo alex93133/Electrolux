@@ -24,9 +24,13 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     // MARK: - Functions
     private func createTabs() {
         let tab1 = UINavigationController(rootViewController: presentationAssembly.imageSearcherViewController())
+        let barItem1 = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        tab1.tabBarItem = barItem1
 
 
         let tab2 = UINavigationController(rootViewController: presentationAssembly.userInfoViewController())
+        let barItem2 = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        tab2.tabBarItem = barItem2
 
         viewControllers = [tab1, tab2]
     }

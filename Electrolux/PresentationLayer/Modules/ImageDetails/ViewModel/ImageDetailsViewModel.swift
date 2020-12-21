@@ -4,12 +4,8 @@ protocol ImageDetailsViewModelProtocol {
     
 }
 
-class ImageDetailsViewModel: ImageDetailsViewModelProtocol {
+struct ImageDetailsViewModel: ImageDetailsViewModelProtocol {
 
     // MARK: - Dependencies
-    private var model: ImageDetailsModelProtocol
-
-    init(model: ImageDetailsModelProtocol) {
-        self.model = model
-    }
+    var model: ImageDetailsModelProtocol
 }

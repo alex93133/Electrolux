@@ -3,20 +3,24 @@ PODS:
     - Kingfisher/Core (= 5.15.8)
   - Kingfisher/Core (5.15.8)
   - SwiftLint (0.41.0)
+  - SwiftyXMLParser (5.0.0)
 
 DEPENDENCIES:
   - Kingfisher (~> 5.15.8)
   - SwiftLint (~> 0.41.0)
+  - SwiftyXMLParser (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - Kingfisher
     - SwiftLint
+    - SwiftyXMLParser
 
 SPEC CHECKSUMS:
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
+  SwiftyXMLParser: 5ebb8793192f403fa8cc691045143906122a7a75
 
-PODFILE CHECKSUM: 08cb9baf7aa6d7caf3f9db6bb19cc42e64542ed0
+PODFILE CHECKSUM: 23686e2208d1462108296ce3253ae657bf513b67
 
 COCOAPODS: 1.10.0

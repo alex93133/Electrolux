@@ -4,6 +4,6 @@ protocol UserDataServiceProtocol {
 
 }
 
-class UserDataService: UserDataServiceProtocol {
+struct UserDataService: UserDataServiceProtocol {
 
 }

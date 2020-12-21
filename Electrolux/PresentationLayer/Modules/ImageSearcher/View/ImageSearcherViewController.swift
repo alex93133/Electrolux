@@ -9,7 +9,7 @@ class ImageSearcherViewController: UIViewController {
     }()
 
     // MARK: - Dependencies
-    private var viewModel: ImageSearcherViewModelProtocol
+    var viewModel: ImageSearcherViewModelProtocol
     init(viewModel: ImageSearcherViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -20,10 +20,28 @@ class ImageSearcherViewController: UIViewController {
     }
     
     // MARK: - VC Lifecycle
+    override func loadView() {
+        view = imageSearcherView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
+        setupNavigationBar()
+        hideKeyboardWhenTappedOutside()
+        viewModel.delegate = self
     }
 
     // MARK: - Functions
+    private func setupView() {
+        imageSearcherView.setupUIElements()
+        imageSearcherView.collectionView.delegate = self
+        imageSearcherView.collectionView.dataSource = self
+        imageSearcherView.searchBar.delegate = self
+        imageSearcherView.collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: Identifiers.imageCollectionViewCell)
+    }
+
+    private func setupNavigationBar() {
+        navigationItem.title = "Image searcher"
+    }
 }

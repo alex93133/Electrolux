@@ -4,10 +4,6 @@ protocol UserInfoModelProtocol {
     var userDataService: UserDataServiceProtocol { get }
 }
 
-class UserInfoModel: UserInfoModelProtocol {
+struct UserInfoModel: UserInfoModelProtocol {
     var userDataService: UserDataServiceProtocol
-
-    init(userDataService: UserDataServiceProtocol) {
-        self.userDataService = userDataService
-    }
 }

@@ -4,12 +4,8 @@ protocol UserInfoViewModelProtocol {
 
 }
 
-class UserInfoViewModel: UserInfoViewModelProtocol {
+struct UserInfoViewModel: UserInfoViewModelProtocol {
 
     // MARK: - Dependencies
-    private var model: UserInfoModelProtocol
-
-    init(model: UserInfoModelProtocol) {
-        self.model = model
-    }
+   var model: UserInfoModelProtocol
 }

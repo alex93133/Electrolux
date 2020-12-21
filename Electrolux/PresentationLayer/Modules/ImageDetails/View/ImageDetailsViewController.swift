@@ -20,6 +20,10 @@ class ImageDetailsViewController: UIViewController {
     }
 
     // MARK: - VC Lifecycle
+    override func loadView() {
+        view = imageDetailsView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

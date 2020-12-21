@@ -20,6 +20,10 @@ class UserInfoViewController: UIViewController {
     }
 
     // MARK: - VC Lifecycle
+    override func loadView() {
+        view = userInfoView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
