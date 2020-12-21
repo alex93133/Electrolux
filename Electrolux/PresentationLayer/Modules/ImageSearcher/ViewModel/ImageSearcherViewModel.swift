@@ -28,6 +28,7 @@ class ImageSearcherViewModel: ImageSearcherViewModelProtocol {
     var imageMetaDataList = [ImageMetaData]()
     weak var delegate: ImageSearcherViewModelDelegate?
 
+    // MARK: - Functions
     func numberOfItemsInSection() -> Int {
         return imageMetaDataList.count
     }
@@ -57,6 +58,9 @@ class ImageSearcherViewModel: ImageSearcherViewModelProtocol {
     func setImage(to imageView: UIImageView, indexPath: IndexPath) {
         let imageMetaData = imageMetaDataList[indexPath.item]
         guard let url = model.flickrService.generateImageURL(size: .small, metaData: imageMetaData) else { return }
-        imageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
+        imageView.kf.indicatorType = .activity
+        imageView.kf.setImage(with: url,
+                              placeholder: Images.imagePlaceholder,
+                              options: [.transition(.fade(0.2))])
     }
 }

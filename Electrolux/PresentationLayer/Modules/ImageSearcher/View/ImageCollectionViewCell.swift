@@ -8,6 +8,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.backgroundColor = .lightGray
         return imageView
     }()
 

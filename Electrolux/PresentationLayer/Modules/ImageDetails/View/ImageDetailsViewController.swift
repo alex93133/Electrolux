@@ -44,7 +44,9 @@ class ImageDetailsViewController: UIViewController {
                                              action: #selector(saveButtonPressed))
 
         navigationItem.rightBarButtonItem = saveButtonItem
-
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
 
     // MARK: - Actions

@@ -21,6 +21,13 @@ extension ImageSearcherViewController: UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.didSelectItemAt(indexPath: indexPath)
     }
+
+    func collectionView( _ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.imageCollectionViewCell,
+                                                         for: indexPath) as? ImageCollectionViewCell {
+            cell.imageView.kf.cancelDownloadTask()
+        }
+    }
 }
 
 // MARK: - SearchBar

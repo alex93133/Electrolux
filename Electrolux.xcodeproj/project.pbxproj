@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332D5FD82590BB72008731D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332D5FD72590BB72008731D0 /* User.swift */; };
+		332D5FDC2590C3B2008731D0 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332D5FDB2590C3B2008731D0 /* UILabel.swift */; };
+		332D5FDF2590CD97008731D0 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332D5FDE2590CD97008731D0 /* Images.swift */; };
 		33F9977C258F935800C95889 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */; };
 		33F99780258F93FC00C95889 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9977F258F93FC00C95889 /* ConfigurableView.swift */; };
 		33F99787258F962900C95889 /* ImageSearcherViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.debug.xcconfig"; sourceTree = "<group>"; };
+		332D5FD72590BB72008731D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		332D5FDB2590C3B2008731D0 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		332D5FDE2590CD97008731D0 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		33F9977F258F93FC00C95889 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherViewControllerDelegates.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				33FEDEC2258F552700679218 /* Assets.xcassets */,
 				33FEDF6F258F91EB00679218 /* Colors.swift */,
 				33F99789258F966A00C95889 /* Identifiers.swift */,
+				332D5FDE2590CD97008731D0 /* Images.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				33F9978C258FADCF00C95889 /* URL.swift */,
 				33F9978F258FADEF00C95889 /* Dictionary.swift */,
 				33F997AC25907E3200C95889 /* UIViewController.swift */,
+				332D5FDB2590C3B2008731D0 /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				33FEDF62258F709B00679218 /* UserInfoModel.swift */,
+				332D5FD72590BB72008731D0 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -486,7 +495,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		AB9E1260CD2D0186F23848B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -517,12 +526,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332D5FDC2590C3B2008731D0 /* UILabel.swift in Sources */,
 				33FEDF69258F713800679218 /* ImageDetailsViewModel.swift in Sources */,
 				33FEDF70258F91EB00679218 /* Colors.swift in Sources */,
 				33FEDF5D258F700A00679218 /* ImageSearcherModel.swift in Sources */,
 				33FEDF0B258F612000679218 /* AppDelegate.swift in Sources */,
 				33FEDF27258F689D00679218 /* UserDataService.swift in Sources */,
 				33FEDF50258F6F7800679218 /* ImageDetailsView.swift in Sources */,
+				332D5FDF2590CD97008731D0 /* Images.swift in Sources */,
 				33FEDF53258F6F9500679218 /* UserInfoView.swift in Sources */,
 				33F997AA258FC82600C95889 /* ImageSize.swift in Sources */,
 				33FEDF2B258F68B600679218 /* FlickrService.swift in Sources */,
@@ -549,6 +560,7 @@
 				33FEDF66258F70FE00679218 /* ImageSearcherViewModel.swift in Sources */,
 				33FEDF4A258F6F2D00679218 /* ImageSearcherViewController.swift in Sources */,
 				33F997A5258FBE8900C95889 /* ImageMetaData.swift in Sources */,
+				332D5FD82590BB72008731D0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

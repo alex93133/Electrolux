@@ -26,8 +26,15 @@ class UserInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
     }
 
     // MARK: - Functions
+    private func setupView() {
+        userInfoView.setupUIElements()
+        userInfoView.nameLabel.text = viewModel.nameLabelText
+        userInfoView.photoImageView.image = viewModel.photo
+        userInfoView.descriptionLabel.text = viewModel.descriptionLabelText
+        userInfoView.descriptionLabel.addLineSpacing()
+    }
 }

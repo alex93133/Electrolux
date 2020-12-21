@@ -25,6 +25,7 @@ class ImageDetailsViewModel: ImageDetailsViewModelProtocol {
     // MARK: - Functions
     func setImage(to imageView: UIImageView) {
         guard let url = model.flickrService.generateImageURL(size: .large, metaData: imageMetaData) else { return }
+        imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
     }
 }

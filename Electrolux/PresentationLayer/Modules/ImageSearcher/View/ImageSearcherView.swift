@@ -26,6 +26,7 @@ class ImageSearcherView: UIView {
         let searchBar = UISearchBar()
         searchBar.enablesReturnKeyAutomatically = true
         searchBar.searchBarStyle = .minimal
+        searchBar.placeholder = "Type any picture tag"
         return searchBar
     }()
 
