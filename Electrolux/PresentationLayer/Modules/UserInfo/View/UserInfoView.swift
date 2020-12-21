@@ -4,12 +4,11 @@ class UserInfoView: UIView {
 
     // MARK: - UI
 
-
     // MARK: - Functions
     func setupUIElements() {
 
     }
 
     // MARK: - Constraints
-    
+
 }

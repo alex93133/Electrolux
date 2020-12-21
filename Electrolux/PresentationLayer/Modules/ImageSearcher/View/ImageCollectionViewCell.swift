@@ -1,9 +1,7 @@
 import UIKit
 import Kingfisher
 
-class ImageCollectionViewCell: UICollectionViewCell, ConfigurableView {
-
-    typealias ConfigurationModel = ImageCollectionViewCellModelProtocol
+class ImageCollectionViewCell: UICollectionViewCell {
 
     // MARK: - UI
     lazy var imageView: UIImageView = {
@@ -26,10 +24,6 @@ class ImageCollectionViewCell: UICollectionViewCell, ConfigurableView {
     private func setupUIElements() {
         addSubviews(imageView)
         setupImageViewConstraints()
-    }
-
-    func configure(with model: ConfigurationModel) {
-        imageView.kf.setImage(with: model.imageURL)
     }
 
     // MARK: - Constraints

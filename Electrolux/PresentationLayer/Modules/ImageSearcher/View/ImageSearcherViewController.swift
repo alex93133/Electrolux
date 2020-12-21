@@ -18,7 +18,7 @@ class ImageSearcherViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK: - VC Lifecycle
     override func loadView() {
         view = imageSearcherView
@@ -38,7 +38,8 @@ class ImageSearcherViewController: UIViewController {
         imageSearcherView.collectionView.delegate = self
         imageSearcherView.collectionView.dataSource = self
         imageSearcherView.searchBar.delegate = self
-        imageSearcherView.collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: Identifiers.imageCollectionViewCell)
+        imageSearcherView.collectionView.register(ImageCollectionViewCell.self,
+                                                  forCellWithReuseIdentifier: Identifiers.imageCollectionViewCell)
     }
 
     private func setupNavigationBar() {

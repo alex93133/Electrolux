@@ -12,12 +12,14 @@ extension ImageSearcherViewController: UICollectionViewDelegate,
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.imageCollectionViewCell,
                                                          for: indexPath) as? ImageCollectionViewCell {
 
-            let cellModels = viewModel.getCellModel()
-            let cellModel = cellModels[indexPath.item]
-            cell.configure(with: cellModel)
+            viewModel.setImage(to: cell.imageView, indexPath: indexPath)
             return cell
         }
         return UICollectionViewCell()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectItemAt(indexPath: indexPath)
     }
 }
 
@@ -41,8 +43,16 @@ extension ImageSearcherViewController: UISearchBarDelegate {
 
 // MARK: - ViewModel
 extension ImageSearcherViewController: ImageSearcherViewModelDelegate {
+    func presentError(error: Error) {
+        presentAlert(title: "Error", message: error.localizedDescription)
+    }
+
     func dataDidUpdate() {
         imageSearcherView.activityIndicator.stopAnimating()
         imageSearcherView.collectionView.reloadData()
+    }
+
+    func presentImageDetailsViewController(_ imageDetailsViewController: ImageDetailsViewController) {
+        navigationController?.pushViewController(imageDetailsViewController, animated: true)
     }
 }

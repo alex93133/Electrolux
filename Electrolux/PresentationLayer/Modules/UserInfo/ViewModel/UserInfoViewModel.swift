@@ -4,8 +4,12 @@ protocol UserInfoViewModelProtocol {
 
 }
 
-struct UserInfoViewModel: UserInfoViewModelProtocol {
+class UserInfoViewModel: UserInfoViewModelProtocol {
 
     // MARK: - Dependencies
-   var model: UserInfoModelProtocol
+    var model: UserInfoModelProtocol
+
+    init(model: UserInfoModelProtocol) {
+        self.model = model
+    }
 }

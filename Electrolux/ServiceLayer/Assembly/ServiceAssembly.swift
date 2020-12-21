@@ -5,7 +5,6 @@ protocol ServiceAssemblyProtocol {
     var flickrService: ImageLoaderServiceProtocol { get }
 }
 
-
 class ServiceAssembly: ServiceAssemblyProtocol {
     lazy var userDataService: UserDataServiceProtocol = UserDataService()
     lazy var flickrService: ImageLoaderServiceProtocol = FlickrService()

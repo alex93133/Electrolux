@@ -1,14 +1,17 @@
-import Foundation
+import UIKit
 
 protocol ImageSearcherViewModelProtocol {
     var delegate: ImageSearcherViewModelDelegate? { get set }
     func numberOfItemsInSection() -> Int
-    func getCellModel() -> [ImageCollectionViewCellModelProtocol]
     func getData(search text: String)
+    func setImage(to imageView: UIImageView, indexPath: IndexPath)
+    func didSelectItemAt(indexPath: IndexPath)
 }
 
 protocol ImageSearcherViewModelDelegate: class {
     func dataDidUpdate()
+    func presentImageDetailsViewController(_ imageDetailsViewController: ImageDetailsViewController)
+    func presentError(error: Error)
 }
 
 class ImageSearcherViewModel: ImageSearcherViewModelProtocol {
@@ -22,11 +25,11 @@ class ImageSearcherViewModel: ImageSearcherViewModelProtocol {
     }
 
     // MARK: - Properties
-    var imageMetaData = [ImageMetaData]()
+    var imageMetaDataList = [ImageMetaData]()
     weak var delegate: ImageSearcherViewModelDelegate?
 
     func numberOfItemsInSection() -> Int {
-        return imageMetaData.count
+        return imageMetaDataList.count
     }
 
     func getData(search text: String) {
@@ -35,19 +38,25 @@ class ImageSearcherViewModel: ImageSearcherViewModelProtocol {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let imageMetaDataList):
-                    self.imageMetaData = imageMetaDataList
+                    self.imageMetaDataList = imageMetaDataList
                     self.delegate?.dataDidUpdate()
 
-                case .failure(_):
-                    return
+                case .failure(let error):
+                    self.delegate?.presentError(error: error)
                 }
             }
         }
     }
 
-    func getCellModel() -> [ImageCollectionViewCellModelProtocol] {
-        let imageURLs = imageMetaData.compactMap { model.flickrService.generateImageURL(size: .small, metaData: $0) }
-        let cellModel = imageURLs.map { ImageCollectionViewCellModel(imageURL: $0) }
-        return cellModel
+    func didSelectItemAt(indexPath: IndexPath) {
+        let imageMetaData = imageMetaDataList[indexPath.item]
+        let imageDetailsViewController = presentationAssembly.imageDetailsViewController(imageMetaData: imageMetaData)
+        delegate?.presentImageDetailsViewController(imageDetailsViewController)
+    }
+
+    func setImage(to imageView: UIImageView, indexPath: IndexPath) {
+        let imageMetaData = imageMetaDataList[indexPath.item]
+        guard let url = model.flickrService.generateImageURL(size: .small, metaData: imageMetaData) else { return }
+        imageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		33F9977C258F935800C95889 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */; };
 		33F99780258F93FC00C95889 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9977F258F93FC00C95889 /* ConfigurableView.swift */; };
-		33F99784258F945E00C95889 /* ImageCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99783258F945E00C95889 /* ImageCollectionViewCellModel.swift */; };
 		33F99787258F962900C95889 /* ImageSearcherViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */; };
 		33F9978A258F966A00C95889 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99789258F966A00C95889 /* Identifiers.swift */; };
 		33F9978D258FADCF00C95889 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9978C258FADCF00C95889 /* URL.swift */; };
@@ -49,7 +48,6 @@
 		0BBAFF59E8410C6F80AF2AE1 /* Pods-Electrolux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux/Pods-Electrolux.debug.xcconfig"; sourceTree = "<group>"; };
 		33F9977B258F935800C95889 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		33F9977F258F93FC00C95889 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
-		33F99783258F945E00C95889 /* ImageCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		33F99786258F962900C95889 /* ImageSearcherViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearcherViewControllerDelegates.swift; sourceTree = "<group>"; };
 		33F99789258F966A00C95889 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		33F9978C258FADCF00C95889 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
@@ -341,7 +339,6 @@
 			isa = PBXGroup;
 			children = (
 				33FEDF65258F70FE00679218 /* ImageSearcherViewModel.swift */,
-				33F99783258F945E00C95889 /* ImageCollectionViewCellModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -520,7 +517,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F99784258F945E00C95889 /* ImageCollectionViewCellModel.swift in Sources */,
 				33FEDF69258F713800679218 /* ImageDetailsViewModel.swift in Sources */,
 				33FEDF70258F91EB00679218 /* Colors.swift in Sources */,
 				33FEDF5D258F700A00679218 /* ImageSearcherModel.swift in Sources */,

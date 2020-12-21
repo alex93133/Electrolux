@@ -3,7 +3,7 @@ import Foundation
 protocol PresentationAssemblyProtocol {
     func tabBarController() -> TabBarController
     func imageSearcherViewController() -> ImageSearcherViewController
-    func imageDetailsViewController() -> ImageDetailsViewController
+    func imageDetailsViewController(imageMetaData: ImageMetaData) -> ImageDetailsViewController
     func userInfoViewController() -> UserInfoViewController
 }
 
@@ -30,9 +30,9 @@ class PresentationAssembly: PresentationAssemblyProtocol {
     }
 
     // MARK: - ImageDetailsViewController
-    func imageDetailsViewController() -> ImageDetailsViewController {
+    func imageDetailsViewController(imageMetaData: ImageMetaData) -> ImageDetailsViewController {
         let imageDetailsModel: ImageDetailsModelProtocol = ImageDetailsModel(flickrService: serviceAssembly.flickrService)
-        let imageDetailsViewModel: ImageDetailsViewModelProtocol = ImageDetailsViewModel(model: imageDetailsModel)
+        let imageDetailsViewModel: ImageDetailsViewModelProtocol = ImageDetailsViewModel(model: imageDetailsModel, imageMetaData: imageMetaData)
         let imageDetailsViewController = ImageDetailsViewController(viewModel: imageDetailsViewModel)
         return imageDetailsViewController
     }

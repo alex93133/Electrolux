@@ -22,7 +22,7 @@ struct FlickrService: ImageLoaderServiceProtocol {
             "tags": tag,
             "content_type": "1",
             "media": "photos",
-            "per_page": String(fetchLimit),
+            "per_page": String(fetchLimit)
         ]
 
         url = url.appendingQueryParameters(urlParams)
@@ -42,7 +42,7 @@ struct FlickrService: ImageLoaderServiceProtocol {
             }
 
             guard let data = data else { return }
-           let parsedData = parseXMLData(from: data)
+            let parsedData = parseXMLData(from: data)
             handler(.success(parsedData))
         })
         task.resume()
