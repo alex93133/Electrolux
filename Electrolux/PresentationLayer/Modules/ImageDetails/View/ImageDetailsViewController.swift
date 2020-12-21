@@ -57,7 +57,7 @@ class ImageDetailsViewController: UIViewController {
     }
 
     @objc
-    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+    private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
             presentAlert(title: "Error", message: error.localizedDescription)
         } else {

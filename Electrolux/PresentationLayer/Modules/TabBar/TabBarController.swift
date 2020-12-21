@@ -3,7 +3,7 @@ import UIKit
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     // MARK: - Dependencies
-    var presentationAssembly: PresentationAssemblyProtocol
+    private var presentationAssembly: PresentationAssemblyProtocol
 
     init(presentationAssembly: PresentationAssemblyProtocol) {
         self.presentationAssembly = presentationAssembly

@@ -3,13 +3,13 @@ import UIKit
 class UserInfoViewController: UIViewController {
 
     // MARK: - Properties
-    lazy var userInfoView: UserInfoView = {
+    private lazy var userInfoView: UserInfoView = {
         let view = UserInfoView(frame: UIScreen.main.bounds)
         return view
     }()
 
     // MARK: - Dependencies
-    var viewModel: UserInfoViewModelProtocol
+    private var viewModel: UserInfoViewModelProtocol
     init(viewModel: UserInfoViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)

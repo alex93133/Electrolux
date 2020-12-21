@@ -1,5 +1,4 @@
 import UIKit
-import Kingfisher
 
 protocol ImageDetailsViewModelProtocol {
     var navBarTitle: String { get }
@@ -9,8 +8,8 @@ protocol ImageDetailsViewModelProtocol {
 class ImageDetailsViewModel: ImageDetailsViewModelProtocol {
 
     // MARK: - Dependencies
-    var model: ImageDetailsModelProtocol
-    var imageMetaData: ImageMetaData
+    private var model: ImageDetailsModelProtocol
+    private var imageMetaData: ImageMetaData
 
     init(model: ImageDetailsModelProtocol, imageMetaData: ImageMetaData) {
         self.model = model

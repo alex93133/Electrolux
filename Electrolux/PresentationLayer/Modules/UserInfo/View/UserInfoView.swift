@@ -3,8 +3,8 @@ import UIKit
 class UserInfoView: UIView {
 
     // MARK: - UI
-    lazy var scrollView = UIScrollView()
-    lazy var contentView = UIView()
+    private lazy var scrollView = UIScrollView()
+    private lazy var contentView = UIView()
 
     lazy var photoImageView: UIImageView = {
         let photoImageView = UIImageView()
@@ -22,7 +22,7 @@ class UserInfoView: UIView {
         return nameLabel
     }()
 
-    lazy var bioLabel: UILabel = {
+    private lazy var bioLabel: UILabel = {
         let bioLabel = UILabel()
         bioLabel.font = .systemFont(ofSize: 24, weight: .bold)
         bioLabel.numberOfLines = 0
